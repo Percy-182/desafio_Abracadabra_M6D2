@@ -36,7 +36,7 @@ encontrar(_random_) el conejo oculto.
 Estas instrucciones te guiarán para obtener una copia de este proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 ```bash
-git git@github.com:Percy-182/prueba_-Programaci-n_Avanzada_JS.git
+git git@github.com:Percy-182/desafio_Abracadabra_M6D2.git
 ```
 
 ### Pre-requisitos 📋
