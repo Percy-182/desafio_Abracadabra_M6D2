@@ -64,7 +64,15 @@ app.get("/abracadabra/conejo/:n", (req, res) => {
   const n = Math.floor(Math.random() * 4) + 1;
   const numero = parseInt(req.params.n);
   if (numero === n) {
-    res.sendFile(__dirname + "/assets/conejito.jpg");
+    const html = `<div class="card" style="width: 18rem;">
+  <img src="/conejito.jpg" class="card-img-top" width="100%" alt="conejito">
+  <div class="card-body">
+    <h5 class="card-title">Conejito</h5>
+    <p class="card-text">Correcto haz ganado.</p>
+    <a href="http://localhost:3000" class="btn btn-primary">Volver a Jugar</a>
+  </div>
+</div>`;
+    res.send(html); //res.sendFile(__dirname + "`/assets/conejito.jpg");
   } else {
     res.sendFile(__dirname + "/assets/voldemort.jpg");
   }
